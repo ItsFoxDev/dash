@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>dash.</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ItsFoxDev/fa-turbo/css/all.min.css" />
+<div dash flex center id="window">
+  <h1 id="title" center>dash<span id="period">.</span></h1>
+  <span center id="desc">A swiss army knife for the web</span>
+  <spacer></spacer>
+  <div flex center><button onclick="document.getElementById('popup-cont').style.bottom='0px';" id="install"><i class="far fa-arrow-down-to-line"></i> Install</button></div>
+</div>
+<div dash flex center id="popup-cont">
+  <div id="popup">
+    <h2><span style="font-weight:500;">Installing</span> <span style="font-weight:800;">dash.</span></h2>
+    <span class="banner"><span block style="width:100%;font-weight:600;"><i class="far fa-triangle-exclamation"></i> Information</span>
+      If your bookmarks bar is not visible, press
+      <key>Ctrl</key> +
+      <key>Shift</key> +
+      <key>B</key> to toggle your bookmark bar
+    </span>
+    <span style="margin-top:5px;font-size:18.5px;">Drag <a id="bm">dash.</a> to your bookmark bar</span>
+    <button onclick="document.getElementById('popup-cont').style.bottom='-100vw';" style="transform: translateY(-8px);font-size:15px;padding: 4.5px 0px;width: 72px;"><i class="far fa-check"></i> Done</button>
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./sethref.js"></script>
+
+</body>
+</html>
