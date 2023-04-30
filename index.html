@@ -24,12 +24,33 @@
       <key>Shift</key> +
       <key>B</key> to toggle your bookmark bar
     </span>
-    <span style="margin-top:5px;font-size:18.5px;">Drag <a id="bm">dash.</a> to your bookmark bar</span>
+    <span style="margin-top:5px;font-size:18.5px;">Drag <a class="bm">dash.</a> to your bookmark bar</span>
     <button onclick="document.getElementById('popup-cont').style.bottom='-100vw';" style="transform: translateY(-8px);font-size:15px;padding: 4.5px 0px;width: 72px;"><i class="far fa-check"></i> Done</button>
   </div>
 </div>
-<!-- partial -->
-  <script  src="./sethref.js"></script>
-
+<div dash flex center id="uptodate" class="update-cont">
+  <div class="update-popup">
+    <h2><span style="font-weight:500;"><i class="fas fa-check" style="margin-right:5px"></i>Up to date</span></h2>
+    <span class="banner"><span block style="width:100%;font-weight:600;"><i class="far fa-bug"></i> Found a bug?</span>
+      If you've found a bug or something isn't working, please <a href="https://forms.gle/mRZP8rdAAC7xa1Nk6">let us know</a>, or <a href="https://discord.gg/q323sRB5FD">join the Discord</a> for further support.
+    </span>
+    <span style="font-size:18.5px;"><b>dash.</b> is up to date!</span>
+    <span style="font-size:12px;">Version <span class="latestversion">?</span></span>
+    <button onclick="document.getElementById('uptodate').style.bottom='-100vw';" style="margin-top:5px;font-size:15px;padding: 4.5px 0px;width: 72px;"><i class="far fa-check"></i> Done</button>
+  </div>
+</div>
+<div dash flex center id="oldversion" class="update-cont">
+  <div class="update-popup">
+    <h2><span style="font-weight:500;"><i class="fas fa-xmark" style="margin-right:5px"></i>Outdated</span></h2>
+    <span class="banner"><span block style="margin-bottom:3px;width:100%;font-weight:600;"><i class="far fa-sparkles"></i> In the latest version</span>
+      <span id="whatsnew">Item 1<br>Item 2<br>Item 3</span>
+    </span>
+    <span style="font-size:18.5px;height: 25px;">Replace your <b>dash.</b> with <a class="bm">dash.</a></span>
+    <span style="font-size:12px;">Version <span class="currentversion">?</span><i style="margin:0px 5px;" class="far fa-arrow-right"></i><span class="latestversion">?</span></span>
+    <button onclick="document.getElementById('oldversion').style.bottom='-100vw';" style="margin-top:5px;font-size:15px;padding: 4.5px 0px;width: 72px;"><i class="far fa-check"></i> Done</button>
+  </div>
+</div>
+<script  src="./sethref.js"></script>
+<script  src="./update.js"></script>
 </body>
 </html>
