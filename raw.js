@@ -28,3 +28,6 @@ for (let i = 0; i < btns.length; i++) {
 function fd_shrink(te){
     var db=document.getElementById('foxdb');db.classList.add('fd-min');db.style.width='38px' ;document.getElementById('fd-rem').innerHTML='<i class="fal fa-xmark"></i>'; var t=document.getElementById('fd-top');t.style.height='0px' ;var i=document.getElementById('fd-banner');i.style.height='0px' ;i.style.margin='0px' ;t.style.padding='0px' ; var b=document.getElementById('fd-btns');b.style.height='0px' ;b.style.padding='0px' ;te.style.display='none' ;ex=document.getElementById('fd-exp');ex.style.display='inline-block' ;ex.style.setProperty('width','28px','important');
   }
+let inv = document.createElement('div');
+inv.id='fd=invert';
+inv.style.cssText='z-index:99999999999999;pointer-events:none;width:100vw;height:100vw;position:fixed;inset:0px;';
